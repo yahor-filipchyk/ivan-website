@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
   margin: 0;
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .fill-remaining-space {
