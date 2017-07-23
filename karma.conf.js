@@ -1,6 +1,8 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/0.13/config/configuration-file.html
 
+var ENV_PRODUCTION = process.env.TEST_SUITE;
+
 module.exports = function (config) {
   config.set({
     basePath: '',
@@ -8,6 +10,7 @@ module.exports = function (config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
+      require('karma-phantomjs-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma')
@@ -38,7 +41,10 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ENV_PRODUCTION ? ['PhantomJS'] : ['Chrome'],
+    phantomjsLauncher: {
+      exitOnResourceError: true
+    },
     singleRun: false
   });
 };

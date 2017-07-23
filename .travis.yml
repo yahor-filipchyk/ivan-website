@@ -11,7 +11,7 @@ env:
   - TEST_SUITE=unit
   - TEST_SUITE=acceptance
 
-script: "case $TEST_SUITE in 'unit') npm test ;; 'acceptance') npm e2e ;; esac"
+script: "case $TEST_SUITE in 'unit') npm test ;; 'acceptance') ng e2e ;; esac"
 
 before_install:
   - npm i -g npm@4.2.0
