@@ -7,8 +7,10 @@ describe('ivan-website App', () => {
     page = new IvanWebsitePage();
   });
 
-  it('should display message saying app works', () => {
+  const title = 'We are working hard...';
+
+  it(`should display message saying '${title}'`, () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect<any>(page.getParagraphText()).toEqual(title);
   });
 });
