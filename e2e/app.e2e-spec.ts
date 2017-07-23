@@ -1,10 +1,10 @@
-import { IvanWebsitePage } from './app.po';
+import { MainPage } from './app.po';
 
 describe('ivan-website App', () => {
-  let page: IvanWebsitePage;
+  let page: MainPage;
 
   beforeEach(() => {
-    page = new IvanWebsitePage();
+    page = new MainPage();
   });
 
   const title = 'We are working hard...';
