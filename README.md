@@ -1,6 +1,5 @@
-# IvanWebsite
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### Travis CI status
+[![Build Status](https://travis-ci.org/yahor-filipchyk/ivan-website.svg?branch=master)](https://travis-ci.org/yahor-filipchyk/ivan-website)
 
 ## Development server
 
