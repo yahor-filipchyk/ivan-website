@@ -39,7 +39,7 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
+    autoWatch: !ON_CI_SERVER,
     browsers: ['Chrome'],
     singleRun: !!ON_CI_SERVER
   });
