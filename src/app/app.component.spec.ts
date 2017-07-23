@@ -2,12 +2,13 @@ import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 import { MdProgressSpinnerModule } from '@angular/material';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent, TopNavComponent
       ],
       imports: [
         MdProgressSpinnerModule

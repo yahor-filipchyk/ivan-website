@@ -4,15 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MdProgressSpinnerModule } from '@angular/material';
+import { MdButtonModule, MdProgressSpinnerModule, MdToolbarModule } from '@angular/material';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
     MdProgressSpinnerModule,
+    MdToolbarModule,
+    MdButtonModule,
     FormsModule,
     HttpModule
   ],
