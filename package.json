@@ -8,6 +8,8 @@
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
+    "unit": "ng test",
+    "acceptance": "ng e2e",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod"
