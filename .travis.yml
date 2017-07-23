@@ -9,3 +9,6 @@ env:
   - TEST_SUITE=acceptance
 
 script: "npm $TEST_SUITE"
+
+before_install:
+  - npm i -g npm@4.2.0
