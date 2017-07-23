@@ -10,6 +10,7 @@ cache:
 env:
   - TEST_SUITE=unit
   - TEST_SUITE=acceptance
+  - PHANTOMJS_BIN=/usr/local/phantomjs/bin/phantomjs
 
 script: "case $TEST_SUITE in 'unit') npm test ;; 'acceptance') ng e2e ;; esac"
 
