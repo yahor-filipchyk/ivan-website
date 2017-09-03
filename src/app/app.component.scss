@@ -2,22 +2,21 @@
 #app {
   display: block;
   height: 100%;
-  background: rgba(73, 73, 73, 0.58) url("image/background.jpg") no-repeat center fixed;
-  background-size: cover;
+  background: linear-gradient(to bottom, #a3a3a3 0%, #212121 8%, white 100%), url("image/background.jpg") no-repeat center fixed;
   background-blend-mode: overlay;
-  min-height: 1200px;
+  background-size: cover;
+  min-height: 1400px;
   text-align: center;
 
-  .mat-spinner {
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
+  #main {
+    position: absolute;
+    top: 64px;
 
-  h2 {
-    margin: 30px 120px;
-    color: azure;
+    h2 {
+      margin: 30px 120px;
+      color: white;
+      font-weight: 200;
+    }
   }
 
 }
