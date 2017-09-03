@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MdButtonModule, MdProgressSpinnerModule, MdToolbarModule } from '@angular/material';
+import { MdButtonModule, MdToolbarModule } from '@angular/material';
 import { TopNavComponent } from './top-nav/top-nav.component';
 
 @NgModule({
@@ -14,7 +14,6 @@ import { TopNavComponent } from './top-nav/top-nav.component';
   ],
   imports: [
     BrowserModule,
-    MdProgressSpinnerModule,
     MdToolbarModule,
     MdButtonModule,
     FormsModule,

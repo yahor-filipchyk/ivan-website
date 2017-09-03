@@ -1,5 +1,9 @@
-<app-top-nav></app-top-nav>
-<md-spinner></md-spinner>
-<h1>
-  {{ title }}
-</h1>
+<div id="app" class="mat-app-background">
+  <app-top-nav></app-top-nav>
+  <h2>
+    While we are working on filling my website with more information, you can watch one of my videos below.
+    Thanks for patience!
+  </h2>
+  <iframe width="800" height="454" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoToDisplay)" frameborder="0"
+          allowfullscreen></iframe>
+</div>

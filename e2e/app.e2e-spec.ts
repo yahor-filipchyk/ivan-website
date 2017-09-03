@@ -7,10 +7,10 @@ describe('ivan-website App', () => {
     page = new MainPage();
   });
 
-  const title = 'We are working hard...';
+  const title = 'Thanks for patience!';
 
-  it(`should display message saying '${title}'`, () => {
+  it(`should display message containing '${title}'`, () => {
     page.navigateTo();
-    expect<any>(page.getParagraphText()).toEqual(title);
+    expect<any>(page.getParagraphText()).toContain(title);
   });
 });
