@@ -5,7 +5,14 @@
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
+
   .mat-button {
     font-family: 'Lato', sans-serif;
+  }
+
+  .sidenav-toggle {
+    min-width: 0;
+    padding: 0 8px;
+    margin-right: 8px;
   }
 }

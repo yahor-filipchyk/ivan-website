@@ -1,14 +1,19 @@
 <md-toolbar id="top-nav">
+  <a md-button fxHide.gt-sm class="sidenav-toggle" (click)="sidenav.toggle()">
+    <md-icon>menu</md-icon>
+  </a>
   <span>Ivan Filipchyk</span>
   <!-- This fills the remaining space of the current row -->
   <span class="fill-remaining-space"></span>
-  <a md-button>
-    <span>Paintings</span>
-  </a>
-  <a md-button>
-    <span>Videos</span>
-  </a>
-  <a md-button>
-    <span>Events</span>
-  </a>
+  <span class="links" fxHide fxShow.gt-sm>
+    <a md-button>
+      <span>Paintings</span>
+    </a>
+    <a md-button>
+      <span>Videos</span>
+    </a>
+    <a md-button>
+      <span>Events</span>
+    </a>
+  </span>
 </md-toolbar>

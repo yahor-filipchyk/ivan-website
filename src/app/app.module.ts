@@ -4,8 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MdButtonModule, MdToolbarModule } from '@angular/material';
+import {
+  MdButtonModule, MdIconModule, MdIconRegistry, MdListModule, MdSidenavModule,
+  MdToolbarModule
+} from '@angular/material';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,12 +19,17 @@ import { TopNavComponent } from './top-nav/top-nav.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
     MdToolbarModule,
+    MdSidenavModule,
     MdButtonModule,
+    MdIconModule,
+    MdListModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MdIconRegistry],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

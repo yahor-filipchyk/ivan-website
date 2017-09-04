@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { MdSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-top-nav',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-nav.component.scss']
 })
 export class TopNavComponent implements OnInit {
+  @Input() private sidenav: MdSidenav;
 
   constructor() { }
 
