@@ -25,11 +25,16 @@
     </button>
     <app-top-nav [sidenav]=sidenav></app-top-nav>
     <div id="main">
-      <h2>
+      <h2 [ngClass.gt-sm]="{ lg: true }">
         While we are working on filling my website with more information, you can watch one of my videos below.
         Thanks for patience!
       </h2>
-      <iframe width="800" height="454" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoToDisplay)" frameborder="0"
+      <iframe class="video"
+              [src]="sanitizer.bypassSecurityTrustResourceUrl(videoToDisplay)"
+              frameborder="0"
+              [ngClass.gt-sm]="{ lg: true }"
+              [ngClass.sm]="{ sm: true }"
+              [ngClass.xs]="{ xs: true }"
               allowfullscreen></iframe>
     </div>
   </div>

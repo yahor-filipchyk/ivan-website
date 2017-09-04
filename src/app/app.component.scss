@@ -15,9 +15,27 @@
     top: 64px;
 
     h2 {
-      margin: 30px 120px;
+      &.lg {
+        margin: 30px 120px;
+      }
+      margin: 20px 10px;
       color: white;
       font-weight: 200;
+    }
+
+    .video {
+      &.lg {
+        min-width: 800px;
+        min-height: 454px;
+      }
+      &.sm {
+        min-width: 490px;
+        min-height: 320px;
+      }
+      &.xs {
+        min-width: 0;
+        min-height: 0;
+      }
     }
   }
 
