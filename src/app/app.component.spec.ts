@@ -1,8 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
-import { MdProgressSpinnerModule } from '@angular/material';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MdListModule } from '@angular/material';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,7 +12,7 @@ describe('AppComponent', () => {
         AppComponent, TopNavComponent
       ],
       imports: [
-        MdProgressSpinnerModule
+        FlexLayoutModule, MdListModule
       ]
     }).compileComponents();
   }));
