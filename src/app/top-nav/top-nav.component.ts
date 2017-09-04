@@ -7,7 +7,7 @@ import { MdSidenav } from '@angular/material';
   styleUrls: ['./top-nav.component.scss']
 })
 export class TopNavComponent implements OnInit {
-  @Input() private sidenav: MdSidenav;
+  @Input() sidenav: MdSidenav;
 
   constructor() { }
 
