@@ -7,7 +7,7 @@ describe('ivan-website App', () => {
     page = new MainPage();
   });
 
-  const title = 'Thanks for patience!';
+  const title = 'Thanks for your patience!';
 
   it(`should display message containing '${title}'`, () => {
     page.navigateTo();
